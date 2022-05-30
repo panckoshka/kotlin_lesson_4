@@ -4,25 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="facd2650-59d7-429b-8f1d-c08bab6ca106" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/Comments.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/Post.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/Reposts.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/service/WallService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/wallPost/service/WallServiceTest.kt" afterDir="false" />
+    <list default="true" id="facd2650-59d7-429b-8f1d-c08bab6ca106" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/attachment/AppAttachment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/attachment/Attachment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/attachment/Page.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/attachment/PageAttachment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/attachment/Photo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/attachment/PhotoAttachment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/attachment/VideoAttachment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/wallPost/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/wallPost/Post.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/OriginalPost.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/wallPost/service/WallService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/service/WallService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/wallPost/service/WallServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/wallPost/service/WallServiceTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +52,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Object" />
-        <option value="Kotlin File" />
         <option value="JUnit5 Test Class" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -88,12 +84,18 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="wallPost.attachment" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="wallPost.attachment" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="wallPost.service" />
       <recent name="wallPost.servisce" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.WallServiceTest (1)">
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="WallServiceTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -108,29 +110,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;wallPost.service.WallServiceTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="WallServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;wallPost.servisce.WallServiceTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -170,6 +149,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainKt (2)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sendBoxsDrinks.MainKt" />
+      <module name="kotlin_lesson_4.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="wallPost.MainKt" />
       <module name="kotlin_lesson_4.main" />
@@ -179,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.WallServiceTest (1)" />
-        <item itemvalue="Gradle.WallServiceTest.update" />
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle.WallServiceTest (1)" />
         <item itemvalue="Kotlin.MainKt (1)" />
-        <item itemvalue="Gradle.WallServiceTest" />
+        <item itemvalue="Kotlin.MainKt (2)" />
+        <item itemvalue="Gradle.WallServiceTest.update" />
       </list>
     </recent_temporary>
   </component>
@@ -198,6 +184,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/sandBox/Main.kt</url>
+          <line>3</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/kotlin_lesson_4$WallServiceTest__1_.ic" NAME="WallServiceTest (1) Coverage Results" MODIFIED="1652184108909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

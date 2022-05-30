@@ -1,28 +1,38 @@
 package wallPost.service
 
-import wallPost.Post
+import wallPost.OriginalPost
 
 object WallService {
     //    private val id = (1..5).random()
+
     private var globalid = 0
-    private var posts = emptyArray<Post>()
+    private var originalPosts = emptyArray<OriginalPost>()
 
-    fun add(post: Post): Post {
+    fun add(originalPost: OriginalPost): OriginalPost {
         globalid++
-        val copyPost = post.copy(id = globalid)
-        posts = posts.plus(copyPost)
-        return posts.last()
+        val copyPost = originalPost.copy(id = globalid)
+        originalPosts = originalPosts.plus(copyPost)
+        return originalPosts.last()
     }
 
-    fun getPosts(): Array<Post> {
-        return posts;
+    fun getPosts(): Array<OriginalPost> {
+        return originalPosts;
     }
 
-    fun update(updatePost: Post): Boolean {
-        for (post: Post in getPosts()) {
-            if (post.id == updatePost.id) {
-                post.text = updatePost.text
-                post.ownerId = updatePost.ownerId
+    fun checkText(checkOriginalPost : OriginalPost) :String {
+        for (originalPost: OriginalPost in getPosts()){
+               if (originalPost.id == checkOriginalPost.id && originalPost.text == null){
+                  return "Text is null."
+           }
+        }
+        return "Text presents."
+    }
+
+    fun update(updateOriginalPost: OriginalPost): Boolean {
+        for (originalPost: OriginalPost in getPosts()) {
+            if (originalPost.id == updateOriginalPost.id) {
+                originalPost.text = updateOriginalPost.text
+                originalPost.ownerId = updateOriginalPost.ownerId
                 return true
             }
         }
