@@ -2,13 +2,13 @@ package wallPost
 
 import wallPost.attachment.Attachment
 
-data class OriginalPost(
+data class Post(
     val id: Int = 0,
     var ownerId: Int,
     var text: String?,
     val date: Int = 0,
 
-    val attachments : MutableList<Attachment> = mutableListOf()
+    val attachments: MutableList<Attachment> = mutableListOf(),
 //    val fromId: Int,
 //    val createdBy: Int,
 //    val replyOwnerId: Int,

@@ -4,17 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="facd2650-59d7-429b-8f1d-c08bab6ca106" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/attachment/AppAttachment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/attachment/Attachment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/attachment/Page.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/attachment/PageAttachment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/attachment/Photo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/attachment/PhotoAttachment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/attachment/VideoAttachment.kt" afterDir="false" />
+    <list default="true" id="facd2650-59d7-429b-8f1d-c08bab6ca106" name="Changes" comment="second commit - attachment and Sealed">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/Comment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/PostNotFoundException.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/Report.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/wallPost/Comments.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/wallPost/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/wallPost/Post.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/OriginalPost.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/wallPost/OriginalPost.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/Post.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/wallPost/service/WallService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/wallPost/service/WallService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/wallPost/service/WallServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/wallPost/service/WallServiceTest.kt" afterDir="false" />
     </list>
@@ -70,6 +68,10 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
@@ -95,7 +97,7 @@
       <recent name="wallPost.servisce" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt">
+  <component name="RunManager" selected="Gradle.WallServiceTest (1)">
     <configuration name="WallServiceTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -165,8 +167,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Gradle.WallServiceTest (1)" />
+        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Kotlin.MainKt (1)" />
         <item itemvalue="Kotlin.MainKt (2)" />
         <item itemvalue="Gradle.WallServiceTest.update" />
@@ -187,20 +189,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/sandBox/Main.kt</url>
-          <line>3</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="second commit - attachment and Sealed" />
+    <option name="LAST_COMMIT_MESSAGE" value="second commit - attachment and Sealed" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/kotlin_lesson_4$WallServiceTest__1_.ic" NAME="WallServiceTest (1) Coverage Results" MODIFIED="1652184108909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/kotlin_lesson_4$WallServiceTest__1_.ic" NAME="WallServiceTest (1) Coverage Results" MODIFIED="1654078517138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
